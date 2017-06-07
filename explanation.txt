@@ -1,0 +1,9 @@
+Code filterTweetsToMongoDB.py:
+The tweets in original JSON-format are filtered and only the relevant attributes are saved in folder "filteredTweets", where every filtered tweets has the name filteredXXXX.json, where XXXX is the original filename.
+Then the filtered tweets are saved in mongoDB in database "tweetsDB" in collection "filteredTweets"
+
+Code jaccardComputation.py:
+Pairs of tweets are built. They contain the both tweets and the jaccard similarity coefficient between them.
+
+Code createTables.py:
+For every of the computed coefficients there is table created containing the news sources and the number of tweets with this similarity between the sources.
